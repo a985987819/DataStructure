@@ -23,24 +23,37 @@ public class SingleLinkedListDemo {
         singleLinkedList.orderadd(hero4);
         singleLinkedList.orderadd(hero2);
         singleLinkedList.orderadd(hero3);
-
+//
+//        singleLinkedList.list();
+//        System.out.println();
+//        System.out.println();
+//        System.out.println();
+//
+//        HeroNode hero22 = new HeroNode(2, "瞎子", "4396");
+//        singleLinkedList.update(hero22);
+//
         singleLinkedList.list();
-        System.out.println();
-        System.out.println();
-        System.out.println();
 
-        HeroNode hero22 = new HeroNode(2, "瞎子", "4396");
-        singleLinkedList.update(hero22);
 
+        System.out.println("----------------倒序后的链表----------------");
+        singleLinkedList.reverse(singleLinkedList.getHead());
         singleLinkedList.list();
+//
+//
+//        singleLinkedList.dele(hero3);
+//        singleLinkedList.dele(hero2);
+//        singleLinkedList.dele(hero1);
+//        singleLinkedList.dele(hero4);
+//        System.out.println("删除后的链表");
+//        singleLinkedList.list();
+
+        //System.out.println("倒数第k个结点");
+//        singleLinkedList.list();
+//        singleLinkedList.count(singleLinkedList.getHead());
+//        singleLinkedList.revek(singleLinkedList.getlength(singleLinkedList.getHead()),2);
 
 
-        singleLinkedList.dele(hero3);
-        singleLinkedList.dele(hero2);
-        singleLinkedList.dele(hero1);
-        singleLinkedList.dele(hero4);
-        System.out.println("删除后的链表");
-        singleLinkedList.list();
+
     }
 }
 
@@ -49,6 +62,10 @@ public class SingleLinkedListDemo {
 //定义singlelinkedList管理英雄
 class SingleLinkedList{
     private HeroNode head = new HeroNode(0,"","");
+
+    public HeroNode getHead() {
+        return head;
+    }
 
     //添加
     public void add(HeroNode heroNode){
@@ -132,6 +149,69 @@ class SingleLinkedList{
             temp=temp.next;
         }
     }
+
+    //求单链表结点个数
+    public int count(HeroNode head){
+        HeroNode temp = head.next;
+        int count=0;
+        if(head==null){
+            System.out.println("链表长度为0");
+        }
+        while (true){
+            if(temp==null){
+                System.out.printf("链表的长度为%d",count);
+                break;
+            }
+            count++;
+            temp=temp.next;
+        }
+        return count;
+    }
+
+    //翻转单链表
+    public void reverse(HeroNode head){
+        if(head==null){
+            System.out.println("链表为空");
+        }
+        HeroNode temp = head.next;
+        HeroNode next = null;
+        HeroNode reversehead = new HeroNode(0,"","");
+        while (temp!=null){
+            next=temp.next;
+            temp.next=reversehead.next;
+            reversehead.next=temp;
+            temp=next;
+
+        }
+        head.next=reversehead.next;
+    }
+    //获取长度
+    public int getlength(HeroNode head){
+        int count=0;
+        if(head.next==null){
+            System.out.println("链表为空");
+        }
+        HeroNode temp = head;
+
+        while (true) {
+            if (temp.next == null) {
+                break;
+            }
+            temp = temp.next;
+            count += 1;
+        }
+        return count;
+    }
+    //倒数第k个结点
+    public void revek(int length,int k){
+        HeroNode temp =head;
+        for(int l=0;l<=length-k;l++){
+            temp=temp.next;
+        }
+        System.out.printf("倒数第%d个结点是"+temp,k);
+    }
+
+
 
     //显示
     public void list(){
