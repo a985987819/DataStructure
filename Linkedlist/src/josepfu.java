@@ -7,36 +7,36 @@ public class josepfu {
 
 
         CircleSingleLinkedList circleSingleLinkedList = new CircleSingleLinkedList();
-        circleSingleLinkedList.addBoy(5);
+        circleSingleLinkedList.addBoy(25);
 //        circleSingleLinkedList.showboy();
-        circleSingleLinkedList.josepfu(2);
+        circleSingleLinkedList.josepfu(1, 2, 25);
     }
 }
 
 
 //创建一个环形的单向列表
-class  CircleSingleLinkedList{
-    private Boy first =null;
+class CircleSingleLinkedList {
+    private Boy first = null;
 
     //添加小孩节点，组成环形链表
-    public void addBoy(int nums){
-        if(nums<1){
+    public void addBoy(int nums) {
+        if (nums < 1) {
             System.out.println("nums的值不正确");
             return;
         }
         Boy curBoy = null;
         //用for来创建环形链表
-        for (int i=1;i<=nums;i++){
+        for (int i = 1; i <= nums; i++) {
             Boy boy = new Boy(i);
             //如果是第一个小孩
-            if(i==1){
-                first=boy;
+            if (i == 1) {
+                first = boy;
                 first.setNext(first);
-                curBoy=first;//让curBoy指向第一个小孩
-            }else{
+                curBoy = first;//让curBoy指向第一个小孩
+            } else {
                 curBoy.setNext(boy);
                 boy.setNext(first);
-                curBoy=boy;
+                curBoy = boy;
             }
         }
     }
@@ -60,22 +60,36 @@ class  CircleSingleLinkedList{
         }
     }
     //约瑟夫
-    public void josepfu(int n){
-        if (first==null){
-            System.out.println("没有小孩");
+    public void josepfu(int startNo,int n,int nums){
+        if (first==null||startNo<1||startNo>nums){
+            System.out.println("参数有误");
             return;
         }
-        Boy curBoy = first;
+        Boy helper = first;
         while (true){
-            if(curBoy==null){
+            if(helper.getNext()==first){
                 break;
             }
-            for(int j=0;j<n;j++){
-                curBoy=curBoy.getNext();
-            }
-            curBoy.setNext(curBoy.getNext());
-            System.out.printf("当前的小孩编号为%d\n",curBoy.getNo());
+            helper=helper.getNext();
         }
+        for(int j=0;j<startNo-1;j++){
+            first=first.getNext();
+            helper=helper.getNext();
+        }
+
+        while (true){
+            if(helper==first){
+                break;
+            }
+            for (int x=0;x<n-1;x++){
+                first=first.getNext();
+                helper=helper.getNext();
+            }
+            System.out.printf("出圈的小孩编号为%d\n",first.getNo());
+            first=first.getNext();
+            helper.setNext(first);
+        }
+        System.out.printf("最后剩下的小孩是%d\n",first.getNo());
     }
 }
 
