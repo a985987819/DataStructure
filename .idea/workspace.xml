@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dabfac3d-ba47-42a4-9dee-eef82259ba72" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/JianzhiOffer/JianzhiOffer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JianzhiOffer/src/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stack/src/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stack/src/PolandNotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Stack/PolandNotation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructure/ArrayStackDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataStructure/Arraystack.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +31,7 @@
     <session id="-1760993440">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
@@ -45,33 +41,34 @@
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.21" value="2" />
           <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.26" value="2" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.68" value="1" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="14" />
+          <entry key="java" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="14" />
+          <entry key="JAVA" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="4" />
-          <entry key="java" value="10069" />
+          <entry key="java" value="10799" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10069" />
+          <entry key="JAVA" value="10799" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
@@ -82,7 +79,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Stack/src/ArrayStackDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="1615">
               <caret line="99" column="1" selection-start-line="53" selection-end-line="99" selection-end-column="1" />
             </state>
           </provider>
@@ -114,11 +111,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Stack/src/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1675">
-              <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+            <state relative-caret-position="255">
+              <caret line="123" column="5" lean-forward="true" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Stack/src/PolandNotation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#409#417#0" expanded="true" />
+                <element signature="e#743#751#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -178,6 +189,7 @@
         <option value="$PROJECT_DIR$/JianzhiOffer/src/Solution.java" />
         <option value="$PROJECT_DIR$/Stack/src/Calculator.java" />
         <option value="$PROJECT_DIR$/JianzhiOffer/src/ReverArrayList.java" />
+        <option value="$PROJECT_DIR$/Stack/src/PolandNotation.java" />
       </list>
     </option>
   </component>
@@ -194,8 +206,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="381" />
-    <option name="y" value="91" />
+    <option name="x" value="583" />
+    <option name="y" value="44" />
     <option name="width" value="1054" />
     <option name="height" value="998" />
   </component>
@@ -207,23 +219,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="JianzhiOffer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataStructure" type="462c0819:PsiDirectoryNode" />
-              <item name="JianzhiOffer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DataStructure" type="b2602c69:ProjectViewProjectNode" />
@@ -245,15 +248,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586600996434" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587120191897" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -272,7 +273,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Calculator">
+  <component name="RunManager" selected="Application.PolandNotation">
     <configuration name="ArrayStackDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArrayStackDemo" />
       <module name="Stack" />
@@ -287,15 +288,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DoubleLinkedListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DoubleLinkedListDemo" />
-      <module name="LinkedlistDemo" />
+    <configuration name="LinkedListStackDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LinkedListStackDemo" />
+      <module name="Stack" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListStackDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LinkedListStackDemo" />
+    <configuration name="PolandNotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PolandNotation" />
       <module name="Stack" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -309,19 +310,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DoubleLinkedListDemo" />
       <item itemvalue="Application.josepfu" />
       <item itemvalue="Application.ArrayStackDemo" />
       <item itemvalue="Application.LinkedListStackDemo" />
       <item itemvalue="Application.Calculator" />
+      <item itemvalue="Application.PolandNotation" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PolandNotation" />
         <item itemvalue="Application.Calculator" />
         <item itemvalue="Application.LinkedListStackDemo" />
         <item itemvalue="Application.ArrayStackDemo" />
         <item itemvalue="Application.josepfu" />
-        <item itemvalue="Application.DoubleLinkedListDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -353,21 +354,22 @@
       <workItem from="1586517355507" duration="2916000" />
       <workItem from="1586599085815" duration="1331000" />
       <workItem from="1586600513480" duration="581000" />
+      <workItem from="1587112761999" duration="2968000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40722000" />
+    <option name="totallyTimeSpent" value="43690000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="381" y="91" width="1054" height="998" extended-state="0" />
+    <frame x="583" y="44" width="1054" height="998" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.70683664" visible="true" weight="0.29275653" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.70567787" visible="true" weight="0.29879275" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
-      <window_info id="Structure" order="5" sideWeight="0.2931634" side_tool="true" visible="true" weight="0.29275653" />
+      <window_info id="Structure" order="5" sideWeight="0.29432213" side_tool="true" visible="true" weight="0.29879275" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -431,9 +433,10 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/JianzhiOffer/src/ReverArrayList.java" />
     <entry file="file://$PROJECT_DIR$/Stack/src/ArrayStackDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="1615">
           <caret line="99" column="1" selection-start-line="53" selection-end-line="99" selection-end-column="1" />
         </state>
       </provider>
@@ -477,17 +480,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JianzhiOffer/src/ReverArrayList.java">
+    <entry file="file://$PROJECT_DIR$/Stack/src/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        <state relative-caret-position="255">
+          <caret line="123" column="5" lean-forward="true" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Stack/src/Calculator.java">
+    <entry file="file://$PROJECT_DIR$/Stack/src/PolandNotation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1675">
-          <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+        <state relative-caret-position="102">
+          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#409#417#0" expanded="true" />
+            <element signature="e#743#751#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
